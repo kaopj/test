@@ -15,9 +15,7 @@ num_gay = st.button("press"," ")
 indices = np.linspace(0, 1, num_points)
 theta = 2 * np.pi * num_turns * indices
 radius = indices
-"""
-whuzza
-"""+str(num_gay)
+"""# whuzza """+str(num_gay)
 x = radius * np.cos(theta)
 y = radius * np.sin(theta)
 
