@@ -31,8 +31,8 @@ df = pd.DataFrame({
 st.altair_chart(alt.Chart(df, height=700, width=700)
     .mark_point(filled=True)
     .encode(
-        x=alt.X("x", axis=None),
-        y=alt.Y("y", axis=None),
+        x=alt.X("x"),
+        y=alt.Y("y"),
         color=alt.Color("idx", legend=None, scale=alt.Scale()),
         size=alt.Size("rand", legend=None, scale=alt.Scale(range=[1, 150])),
     ))
