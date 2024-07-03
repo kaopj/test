@@ -4,21 +4,23 @@ import pandas as pd
 import streamlit as st
 
 """
-# Welcome to Streamlit!
-
-In the meantime, below is an example of what you can do with just a few lines of code:
+# Welcome to NagornisGay!
+# x!
 """
 
 num_points = st.slider("Number of points in spiral", 1, 10000, 1100)
 num_turns = st.slider("Number of turns in spiral", 1, 300, 31)
-num_gay = st.button("press"," ")
-indices = np.linspace(0, 1, num_points)
+size = st.slider("size", 0, 10)
+indices = np.linspace(0, size, num_points)
 theta = 2 * np.pi * num_turns * indices
-radius = indices
+radius = np.linspace(0, size, num_points)
+num_gay = st.button("press"," ")
 """# whuzza """+str(num_gay)
 x = radius * np.cos(theta)
 y = radius * np.sin(theta)
-
+z = radius*radius - x*x - y*y;
+a = st.sidebar.button('Menu')
+b = st.sidebar.button('Nagorn loves ut toot')
 df = pd.DataFrame({
     "x": x,
     "y": y,
