@@ -23,7 +23,7 @@ a = st.sidebar.button('Menu')
 b = st.sidebar.button('Nagorn loves ut toot')
 st.echo()
 with st.echo():
-    c = st.sidebar.write('test')
+    st.write('test')
 df = pd.DataFrame({
     "x": x,
     "y": y,
