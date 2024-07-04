@@ -23,7 +23,17 @@ a = st.sidebar.button('Menu')
 b = st.sidebar.button('Nagorn loves ut toot')
 st.echo()
 with st.echo():
-    st.write('test')
+    #include <iostream>
+    #include <vector>
+    using namespace std;
+    #define int long long
+    #define be(x) x.begin(),x.end()
+    #define lgm cin.tie(0)->sync_with_stdio(0);
+    int main() {
+        lgm;
+        int n;
+        cin >> n;
+    }
 df = pd.DataFrame({
     "x": x,
     "y": y,
