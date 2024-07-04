@@ -23,6 +23,7 @@ a = st.sidebar.button('Menu')
 b = st.sidebar.button('Nagorn loves ut toot')
 st.echo()
 with st.echo():
+    """
     #include <iostream>
     #include <vector>
     using namespace std;
@@ -34,6 +35,7 @@ with st.echo():
         int n;
         cin >> n;
     }
+    """
 df = pd.DataFrame({
     "x": x,
     "y": y,
