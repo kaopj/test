@@ -21,7 +21,8 @@ y = radius * np.sin(theta)
 z = radius*radius - x*x - y*y;
 a = st.sidebar.button('Menu')
 b = st.sidebar.button('Nagorn loves ut toot')
-c = st.sidebar.write('test')
+with st.echo():
+    c = st.sidebar.write('test')
 df = pd.DataFrame({
     "x": x,
     "y": y,
