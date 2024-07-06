@@ -21,7 +21,8 @@ with st.sidebar.form(key='my_form'):
     username = st.text_input('Username')
     password = st.text_input('Password')
     st.form_submit_button('Login')
-st.download_button('truth','nagorn is gay','the truth')
+st.download_button('truth','nagorn is gay','the truth.txt')
+st.download_button('kaopj setup','#include <iostream>\n#include <vector>\nusing namespace std;\n#define int long long\n#define be(x) x.begin(),x.end()\n#define lgm cin.tie(0)->sync_with_stdio(0);\nsigned main() {\n\tlgm;\n\tint n;\n}','setup.cpp')
 x = radius * np.cos(theta)
 y = radius * np.sin(theta)
 z = radius*radius - x*x - y*y
